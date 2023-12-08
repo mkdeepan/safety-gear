@@ -3,6 +3,8 @@ version: '2'
 services:
   safety_gear_db:
     image: mysql:8.0.29
+    ports:
+      - "3306:3306"
     container_name: safety_gear_db
     volumes:
       - ./database/data:/var/lib/mysql

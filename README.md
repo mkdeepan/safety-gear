@@ -17,6 +17,10 @@ connect mysql inside docker with below credentials
 
 `mysql -u user -p`
 
+connect from outside docker
+
+`mysql -h localhost -P 3306 --protocol=TCP -u user -p`
+
 db_name: safety_gear_db
 user: user
 password: user
