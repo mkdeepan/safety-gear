@@ -1,0 +1,42 @@
+2023-12-06T08:46:22+00:00 CRITICAL syntax error, unexpected token "}" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 50
+
+2023-12-06T08:48:23+00:00 CRITICAL Unclosed '{' on line 10 in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 70
+
+2023-12-06T08:49:38+00:00 CRITICAL Unclosed '{' on line 10 in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 68
+
+2023-12-06T08:50:37+00:00 CRITICAL Unclosed '{' on line 10 in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 74
+
+2023-12-06T08:55:32+00:00 CRITICAL syntax error, unexpected double-quoted string "'>" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 49
+
+2023-12-06T22:13:33+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:174
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(19): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#3 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 174
+
+2023-12-06T22:13:44+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:174
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(19): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#3 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 174
+
+2023-12-06T22:15:39+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:184
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(19): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#3 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 184
+
+2023-12-06T22:17:01+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:186
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(19): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#3 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 186
+

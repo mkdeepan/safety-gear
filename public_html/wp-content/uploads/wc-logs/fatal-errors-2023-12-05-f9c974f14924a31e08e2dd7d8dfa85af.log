@@ -1,0 +1,317 @@
+2023-12-05T19:13:01+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/update.php(16): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:04+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/theme-install.php(10): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:05+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/themes.php(10): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:06+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/update.php(16): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:09+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/index.php(10): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:20+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/index.php(10): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:25+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:13:27+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:31+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-cron.php(46): require_once('/home/u69511649...')
+#4 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:33+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/create_autologin_656f774b6a36b.php(59): require_once('/home/u69511649...')
+#4 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:41+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:42+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:43+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:17:43+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:27:40+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:40:24+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:57:56+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:57:57+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:57:57+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:57:58+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:02+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-cron.php(46): require_once('/home/u69511649...')
+#4 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:02+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-cron.php(46): require_once('/home/u69511649...')
+#4 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:03+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-cron.php(46): require_once('/home/u69511649...')
+#4 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:14+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:15+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:16+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:16+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:26+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:27+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:27+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T19:58:28+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-blog-header.php(13): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/index.php(17): require('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T20:01:26+00:00 CRITICAL Uncaught Error: Undefined constant "‘wp_enqueue_scripts’" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php:5
+Stack trace:
+#0 /home/u695116496/domains/safetygear.online/public_html/wp-settings.php(600): include()
+#1 /home/u695116496/domains/safetygear.online/public_html/wp-config.php(103): require_once('/home/u69511649...')
+#2 /home/u695116496/domains/safetygear.online/public_html/wp-load.php(50): require_once('/home/u69511649...')
+#3 /home/u695116496/domains/safetygear.online/public_html/wp-admin/admin.php(34): require_once('/home/u69511649...')
+#4 /home/u695116496/domains/safetygear.online/public_html/wp-admin/customize.php(13): require_once('/home/u69511649...')
+#5 {main}
+  thrown in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/functions.php on line 5
+
+2023-12-05T20:40:43+00:00 CRITICAL syntax error, unexpected identifier "get_header" in /home/u695116496/domains/safetygear.online/public_html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 6
+

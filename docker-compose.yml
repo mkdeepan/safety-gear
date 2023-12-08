@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  safety_gear_db:
+    image: mysql:8.0.29
+    container_name: safety_gear_db
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/initdb.d:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: safety_gear_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+
+  safety_gear:
+    depends_on:
+      - safety_gear_db
+    image: wordpress:php8.0
+    container_name: safety_gear
+    ports:
+      - "80:80"
+    restart: always
+    links:
+      - safety_gear_db:mysql
+    volumes:
+      - ./public_html:/var/www/html
