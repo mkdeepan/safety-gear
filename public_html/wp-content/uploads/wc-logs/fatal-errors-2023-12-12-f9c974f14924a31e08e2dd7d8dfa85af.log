@@ -1,0 +1,42 @@
+2023-12-12T02:16:41+00:00 CRITICAL Uncaught Error: Undefined constant "wp_query" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:268
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 268
+
+2023-12-12T02:17:45+00:00 CRITICAL syntax error, unexpected variable "$wp_query", expecting ":" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 268
+
+2023-12-12T04:19:27+00:00 CRITICAL Uncaught Error: Undefined constant "totalRows" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:283
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 283
+
+2023-12-12T04:20:03+00:00 CRITICAL Uncaught Error: Undefined constant "totalRows" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:283
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 283
+
+2023-12-12T04:58:50+00:00 CRITICAL syntax error, unexpected token "=", expecting ")" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 30
+
+2023-12-12T05:02:31+00:00 CRITICAL syntax error, unexpected token "=", expecting ")" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 30
+
+2023-12-12T05:17:11+00:00 CRITICAL syntax error, unexpected token "}", expecting identifier or variable or "{" or "$" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 26
+
+2023-12-12T05:17:21+00:00 CRITICAL syntax error, unexpected token "}", expecting identifier or variable or "{" or "$" in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 26
+
+2023-12-12T14:32:48+00:00 CRITICAL Uncaught Error: Object of class WP_User could not be converted to string in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php:4
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/safetgear-childtheme2/custom-templates/pr_po_template.php on line 4
+

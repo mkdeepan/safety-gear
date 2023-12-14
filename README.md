@@ -13,6 +13,20 @@ run docker
 stop docker
 `docker compose down`
 
+Few other docker commands
+# Stop and remove all running containers
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+# Remove all images, volumes, and networks
+docker system prune -af --volumes
+
+# Destroy the docker image
+docker rmi <image_name>
+
+# Restart the containers
+docker-compose up -d
+
 connect mysql inside docker with below credentials 
 
 `mysql -u user -p`
