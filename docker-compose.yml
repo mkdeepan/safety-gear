@@ -15,6 +15,7 @@ services:
       MYSQL_DATABASE: safety_gear_db
       MYSQL_USER: user
       MYSQL_PASSWORD: user
+      MYSQL_LOWER_CASE_TABLE_NAMES: 2
 
   safety_gear:
     depends_on:
