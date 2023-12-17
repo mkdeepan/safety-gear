@@ -29,3 +29,20 @@ services:
       - safety_gear_db:mysql
     volumes:
       - ./public_html:/var/www/html
+
+  phpmyadmin:
+    depends_on:
+      - safety_gear_db
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "8090:80"
+    environment:
+      PMA_HOST: "localhost"
+      PMA_USER: "user"
+      PMA_PASSWORD: "user"
+
+      ## TODO: permission missing for public_html
+      ## MYSQL_LOWER_CASE_TABLE_NAMES error :: remove data folder
+      ## 5MB file upload permission
+      #phpmyadmin
