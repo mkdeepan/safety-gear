@@ -104,7 +104,10 @@ function custom_code_after_place_order($order_id) {
                 $product_code = get_product_attribute_value($product_id,"pa_product-code");
                 $product_url = $product->get_permalink();
                 $vendorQuery = "select vendor_code from vendor_mapping where product_code = '".$product_code."' and plant_code = '".$plant_code."' and is_primary = 1;";
+                echo $vendorQuery;
+                echo "[" . date('Y-m-d H:i:s') . "] This is your custom message.";
                 $results = $wpdb->get_results($vendorQuery);
+                echo "[" . date('Y-m-d H:i:s') . "] This is your custom message.";
                 $vendor_code = "vendor_code";
                 $code = "";
                 if (!empty($results)) {
@@ -113,6 +116,7 @@ function custom_code_after_place_order($order_id) {
                   }
                 }
 
+                echo "[" . date('Y-m-d H:i:s') . "] This is your custom message.";
 
                 $currentDate = date('d.m.Y');
 
