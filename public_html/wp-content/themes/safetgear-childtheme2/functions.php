@@ -1,7 +1,7 @@
 <?php
 
-//error_reporting(E_ALL);
-//ini_set('display_errors', 0);
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
 
 // inherit styles and functions from woostify theme.
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
@@ -9,6 +9,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 // Add custom order status.
 add_action('init', 'register_custom_order_status');
 add_filter('wc_order_statuses', 'add_custom_order_status');
+add_filter( 'woocommerce_checkout_fields', 'customize_checkout_fields' );
 
 
 add_role('PR PO ADMIN', 'PR PO ADMIN', array('read' => true));
@@ -209,7 +210,7 @@ function add_custom_order_status($order_statuses) {
     return $order_statuses;
 }
 
-function disable_billing_address_fields() {
+/*function disable_billing_address_fields() {
     if (is_checkout()) {
         ?>
         <script type="text/javascript">
@@ -220,5 +221,66 @@ function disable_billing_address_fields() {
         </script>
         <?php
     }
+}*/
+
+function disable_billing_address_fields() {
+
 }
-add_action('wp_footer', 'disable_billing_address_fields');
+
+function customize_checkout_fields( $fields ) {
+    // Remove all default billing fields except for the company field
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_state']);
+
+    // Rename the company field to 'Plant Code' and make it mandatory
+    $fields['billing']['billing_company'] = array(
+        'type'        => 'text',
+        'label'       => __('Plant Code', 'woocommerce'),
+        'placeholder' => _x('Enter your plant code', 'placeholder', 'woocommerce'),
+        'required'    => true,
+        'class'       => array('form-row-wide'),
+        'clear'       => true,
+    );
+
+    $fields['billing']['billing_first_name']['required'] = false;
+    $fields['billing']['billing_last_name']['required'] = false;
+    $fields['billing']['billing_phone']['required'] = false;
+    $fields['billing']['billing_email']['required'] = false;
+    return $fields;
+}
+
+
+// Save the custom fields values
+add_action( 'woocommerce_checkout_update_order_meta', 'save_custom_fields' );
+function save_custom_fields( $order_id ) {
+    if ( ! empty( $_POST['billing_first_name'] ) ) {
+        update_post_meta( $order_id, '_billing_first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+    }
+    if ( ! empty( $_POST['billing_last_name'] ) ) {
+        update_post_meta( $order_id, '_billing_last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+    }
+    if ( ! empty( $_POST['billing_phone'] ) ) {
+        update_post_meta( $order_id, '_billing_phone', sanitize_text_field( $_POST['billing_phone'] ) );
+    }
+    if ( ! empty( $_POST['billing_email'] ) ) {
+        update_post_meta( $order_id, '_billing_email', sanitize_email( $_POST['billing_email'] ) );
+    }
+    if ( ! empty( $_POST['billing_company'] ) ) {
+        update_post_meta( $order_id, '_billing_company', sanitize_text_field( $_POST['billing_company'] ) );
+    }
+}
+
+// Display the custom fields values in the order admin
+add_action( 'woocommerce_admin_order_data_after_billing_address', 'display_custom_fields_in_admin', 10, 1 );
+function display_custom_fields_in_admin( $order ) {
+    echo '<p><strong>' . __( 'First Name', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_first_name', true ) . '</p>';
+    echo '<p><strong>' . __( 'Last Name', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_last_name', true ) . '</p>';
+    echo '<p><strong>' . __( 'Phone', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_phone', true ) . '</p>';
+    echo '<p><strong>' . __( 'Email', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_email', true ) . '</p>';
+    echo '<p><strong>' . __( 'Plant Code', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_company', true ) . '</p>';
+}
+// add_action('wp_footer', 'disable_billing_address_fields');
