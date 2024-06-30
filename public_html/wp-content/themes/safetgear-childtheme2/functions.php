@@ -283,4 +283,24 @@ function display_custom_fields_in_admin( $order ) {
     echo '<p><strong>' . __( 'Email', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_email', true ) . '</p>';
     echo '<p><strong>' . __( 'Plant Code', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_company', true ) . '</p>';
 }
+
+add_filter( 'woocommerce_add_error', 'custom_quantity_error_message', 10, 1 );
+
+function custom_quantity_error_message( $error ) {
+    global $product;
+
+    // Check if the error message is related to quantity validation
+    if ( strpos( $error, 'Please enter a valid quantity for this product' ) !== false ) {
+        // Get the remaining stock quantity for the product
+        $remaining_quantity = max( 0, $product->get_stock_quantity() );
+
+        // Adjust the error message with the remaining quantity
+        $error = sprintf( 'Only %d item%s available. Please change the quantity.',
+            $remaining_quantity,
+            $remaining_quantity === 1 ? '' : 's'
+        );
+    }
+    return $error;
+}
+
 // add_action('wp_footer', 'disable_billing_address_fields');
