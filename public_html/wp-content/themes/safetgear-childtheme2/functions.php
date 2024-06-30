@@ -283,35 +283,4 @@ function display_custom_fields_in_admin( $order ) {
     echo '<p><strong>' . __( 'Email', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_email', true ) . '</p>';
     echo '<p><strong>' . __( 'Plant Code', 'woocommerce' ) . ':</strong> ' . get_post_meta( $order->get_id(), '_billing_company', true ) . '</p>';
 }
-
-// Hook into WooCommerce validation error messages
-add_filter( 'woocommerce_add_error', 'custom_quantity_error_message', 10, 1 );
-
-function custom_quantity_error_message( $error ) {
-    global $woocommerce;
-
-    echo $error;
-    // Check if the error message is related to quantity validation
-    if ( strpos( $error, 'Please enter a valid quantity for this product' ) !== false ) {
-        // Get the product ID from the error message context
-        preg_match( '/product (.*?) is/', $error, $matches );
-        if ( isset( $matches[1] ) ) {
-            $product_id = absint( $matches[1] );
-            $product = wc_get_product( $product_id );
-            if ( $product ) {
-                // Get the remaining stock quantity for the product
-                $remaining_quantity = max( 0, $product->get_stock_quantity() - $woocommerce->cart->get_cart_contents_count() );
-
-                // Adjust the error message with the remaining quantity
-                $error = sprintf( 'Only %d item%s available. Please change the quantity.',
-                    $remaining_quantity,
-                    $remaining_quantity === 1 ? '' : 's'
-                );
-            }
-        }
-    }
-    return $error;
-}
-
-
 // add_action('wp_footer', 'disable_billing_address_fields');
