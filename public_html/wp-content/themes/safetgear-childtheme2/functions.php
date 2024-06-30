@@ -290,6 +290,7 @@ add_filter( 'woocommerce_add_error', 'custom_quantity_error_message', 10, 1 );
 function custom_quantity_error_message( $error ) {
     global $woocommerce;
 
+    echo $error;
     // Check if the error message is related to quantity validation
     if ( strpos( $error, 'Please enter a valid quantity for this product' ) !== false ) {
         // Get the product ID from the error message context
