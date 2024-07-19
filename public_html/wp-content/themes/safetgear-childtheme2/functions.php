@@ -123,7 +123,9 @@ function custom_code_after_place_order($order_id) {
                 $query = "insert into sg_pr_data(order_id, order_item_id, product_id, customer_id, date_created, product_qty, product_net_revenue, urgency, document_type, scope, material, plant,status, flag,product_link_name, customer_display_name,vendor_code,delivery_date,company_code,tax_code,purchase_group,document_type,scope,storage,purchasing_org) 
                 values(".$order_id.",".$order_item_id.",".$product_id.",".$customer_id.",'".$date_created."',".$product_qty.",".$net_revenue.",2,'ZSPA','scope','".$product_code."','".$plant_code."',0,0,
                 '".$product_url."','".$customer_name."','".$code."','".$currentDate."','".$plant_code."','D3','Z01','ZSPA','scope','ms01','1000');";
+				echo $query;
                 $sql = $wpdb->prepare($query);
+				echo $sql;
                 $result = $wpdb->query($sql);
 
                 }
