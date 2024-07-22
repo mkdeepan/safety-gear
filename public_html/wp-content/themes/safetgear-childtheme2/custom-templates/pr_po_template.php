@@ -25,8 +25,16 @@ if($_POST && $_POST['vendor_id'] && $_POST['po_submit']){
 }
 
 // Temporary Vendor list
-$vendor_query = "select distinct vendor_code from master_vendor where is_disabled = false";
-$vendorCode =  $wpdb->get_results($vendor_query);
+$vendor_query = "SELECT DISTINCT vendor_code FROM master_vendor WHERE is_disabled = false";
+$vendorCodeResults = $wpdb->get_results($vendor_query);
+
+// Initialize an empty array to store vendor codes
+$vendorCode = [];
+
+// Loop through the results and add each vendor_code to the array
+foreach ($vendorCodeResults as $result) {
+    $vendorCode[] = $result->vendor_code;
+}
 
 // pagination initialize
 global $wp_query;
