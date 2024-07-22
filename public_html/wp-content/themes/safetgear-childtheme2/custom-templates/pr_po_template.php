@@ -128,12 +128,133 @@ switch ($pageParam) {
         $select_values = array_values($allReqColumns);
         $select_query = "SELECT pr_id,po_group_id as group_id,count(po_group_id) OVER (PARTITION BY po_group_id) as count_r," . implode(",", $select_keys) . " FROM sg_pr_data WHERE flag = '4' order by po_group_id";
         break;
-    case "created_po":
-        $status = 5;
-        break;
-    case "approved_po":
-        $status = 6;
-        break;
+        case "created_po":
+
+            $status = "5";
+    
+            $allReqColumns = array(
+    
+                "material" => "Material",
+    
+                "plant" => "Plant",
+    
+                "order_id" => "Order ID",
+    
+                "pr_approved_date" => "PR Approved Date",
+    
+                "customer_display_name" => "Ordered By",
+    
+                "approved_by" => "PR Approved By",
+    
+                "pr_number" => "PR Number",
+    
+                "po_number" => "PO Number",
+    
+                "po_document_type" => "Document Type",
+    
+                "vendor_code" => "Vendor Code",
+    
+                "purchasing_org" => "Purchasing Org",
+    
+                "purchasing_group" => "Purchasing Group",
+    
+                "company_code" => "Company Code",
+    
+                "line_item" => "Line Item",
+    
+                "po_qty" => "Quantity",
+    
+                "delivery_date" => "Delivery Date",
+    
+                "gross_price" => "Gross Price",
+    
+                "fra1" => "FRA1",
+    
+                "frb1" => "FRB1",
+    
+                "tax_code" => "Tax Code",
+    
+                "po_created_by" => "PO Created By",
+    
+                "po_created_date" => "PO Created Date"
+    
+            );
+    
+            $select_keys = array_keys($allReqColumns);
+    
+            $select_values = array_values($allReqColumns);
+    
+            $select_query = "SELECT pr_id,po_group_id as group_id,count(po_group_id) OVER (PARTITION BY po_group_id) as count_r," . implode(",", $select_keys) . " FROM sg_pr_data WHERE flag = '5' order by po_group_id";
+    
+            echo $select_query;
+    
+            break;
+    
+        case "approved_po":
+    
+            $status = 6;
+    
+            $allReqColumns = array(
+    
+                "material" => "Material",
+    
+                "plant" => "Plant",
+    
+                "order_id" => "Order ID",
+    
+                "pr_approved_date" => "PR Approved Date",
+    
+                "customer_display_name" => "Ordered By",
+    
+                "approved_by" => "PR Approved By",
+    
+                "pr_number" => "PR Number",
+    
+                "po_number" => "PO Number",
+    
+                "po_document_type" => "Document Type",
+    
+                "vendor_code" => "Vendor Code",
+    
+                "purchasing_org" => "Purchasing Org",
+    
+                "purchasing_group" => "Purchasing Group",
+    
+                "company_code" => "Company Code",
+    
+                "line_item" => "Line Item",
+    
+                "po_qty" => "Quantity",
+    
+                "delivery_date" => "Delivery Date",
+    
+                "gross_price" => "Gross Price",
+    
+                "fra1" => "FRA1",
+    
+                "frb1" => "FRB1",
+    
+                "tax_code" => "Tax Code",
+    
+                "po_created_by" => "PO Created By",
+    
+                "po_created_date" => "PO Created Date",
+    
+                "po_approved_by" => "PO Approved By",
+    
+                "po_approved_date" => "PO Approved Date"
+    
+            );
+    
+            $select_keys = array_keys($allReqColumns);
+    
+            $select_values = array_values($allReqColumns);
+    
+            $select_query = "SELECT pr_id,po_group_id as group_id,count(po_group_id) OVER (PARTITION BY po_group_id) as count_r," . implode(",", $select_keys) . " FROM sg_pr_data WHERE flag = '6' order by po_group_id";
+    
+            echo $select_query;
+    
+            break;
 }
 ?>
 <script>
