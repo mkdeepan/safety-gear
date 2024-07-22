@@ -143,9 +143,7 @@ switch ($pageParam) {
                 "pr_approved_date" => "PR Approved Date",
     
                 "customer_display_name" => "Ordered By",
-    
-                "approved_by" => "PR Approved By",
-    
+        
                 "pr_number" => "PR Number",
     
                 "po_number" => "PO Number",
@@ -162,7 +160,7 @@ switch ($pageParam) {
     
                 "line_item" => "Line Item",
     
-                "po_qty" => "Quantity",
+                "qty" => "Quantity",
     
                 "delivery_date" => "Delivery Date",
     
@@ -173,9 +171,7 @@ switch ($pageParam) {
                 "frb1" => "FRB1",
     
                 "tax_code" => "Tax Code",
-    
-                "po_created_by" => "PO Created By",
-    
+        
                 "po_created_date" => "PO Created Date"
     
             );
@@ -205,9 +201,7 @@ switch ($pageParam) {
                 "pr_approved_date" => "PR Approved Date",
     
                 "customer_display_name" => "Ordered By",
-    
-                "approved_by" => "PR Approved By",
-    
+        
                 "pr_number" => "PR Number",
     
                 "po_number" => "PO Number",
@@ -224,7 +218,7 @@ switch ($pageParam) {
     
                 "line_item" => "Line Item",
     
-                "po_qty" => "Quantity",
+                "qty" => "Quantity",
     
                 "delivery_date" => "Delivery Date",
     
@@ -235,13 +229,9 @@ switch ($pageParam) {
                 "frb1" => "FRB1",
     
                 "tax_code" => "Tax Code",
-    
-                "po_created_by" => "PO Created By",
-    
+        
                 "po_created_date" => "PO Created Date",
-    
-                "po_approved_by" => "PO Approved By",
-    
+        
                 "po_approved_date" => "PO Approved Date"
     
             );
