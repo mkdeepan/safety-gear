@@ -160,7 +160,7 @@ switch ($pageParam) {
     
                 "line_item" => "Line Item",
     
-                "qty" => "Quantity",
+                "product_qty" => "Quantity",
     
                 "delivery_date" => "Delivery Date",
     
@@ -218,7 +218,7 @@ switch ($pageParam) {
     
                 "line_item" => "Line Item",
     
-                "qty" => "Quantity",
+                "product_qty" => "Quantity",
     
                 "delivery_date" => "Delivery Date",
     
