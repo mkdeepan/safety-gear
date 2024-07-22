@@ -25,7 +25,8 @@ if($_POST && $_POST['vendor_id'] && $_POST['po_submit']){
 }
 
 // Temporary Vendor list
-$vendorCode = array("Vendor 1", "Vendor 2", "3", "4");
+$vendor_query = "select distinct vendor_code from master_vendor where is_disabled = false";
+$vendorCode =  $wpdb->get_results($vendor_query);
 
 // pagination initialize
 global $wp_query;
@@ -181,9 +182,7 @@ switch ($pageParam) {
             $select_values = array_values($allReqColumns);
     
             $select_query = "SELECT pr_id,po_group_id as group_id,count(po_group_id) OVER (PARTITION BY po_group_id) as count_r," . implode(",", $select_keys) . " FROM sg_pr_data WHERE flag = '5' order by po_group_id";
-    
-            echo $select_query;
-    
+        
             break;
     
         case "approved_po":
@@ -241,9 +240,7 @@ switch ($pageParam) {
             $select_values = array_values($allReqColumns);
     
             $select_query = "SELECT pr_id,po_group_id as group_id,count(po_group_id) OVER (PARTITION BY po_group_id) as count_r," . implode(",", $select_keys) . " FROM sg_pr_data WHERE flag = '6' order by po_group_id";
-    
-            echo $select_query;
-    
+        
             break;
 }
 ?>
