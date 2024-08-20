@@ -20,7 +20,7 @@ if($_POST && $_POST['vendor_id'] && $_POST['po_submit']){
 
     // do other updations
 
-    $update_query = "UPDATE sg_pr_data SET po_created_by=$currentUser->ID,vendor_code='$vendor_code' WHERE pr_id=$pr_id";
+    $update_query = "UPDATE sg_pr_data SET flag=11, po_created_by=$currentUser->ID,vendor_code='$vendor_code' WHERE pr_id=$pr_id";
     $wpdb->query($update_query);
 }
 
