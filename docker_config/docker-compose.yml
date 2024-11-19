@@ -1,5 +1,3 @@
-version: '2'
-
 services:
   safety_gear_db:
     image: mysql:8
@@ -21,12 +19,18 @@ services:
     image: wordpress:php8.0
     container_name: safety_gear
     ports:
-      - "80:80"
+      - "443:443"  # Expose port 443 for HTTPS
     restart: always
     links:
       - safety_gear_db:mysql
     volumes:
-      - ../safety-gear/public_html:/var/www/html
+      - ../public_html:/var/www/html
+      - /etc/ssl/certs/greenko_wildcard.crt:/etc/ssl/certs/greenko_wildcard.crt
+      - /etc/ssl/private/greenko_wildcard.key:/etc/ssl/private/greenko_wildcard.key
+      - /etc/ssl/certs/greenko_wildcard_bundle.crt:/etc/ssl/certs/greenko_wildcard_bundle.crt
+    environment:
+      - APACHE_SSL=enabled
+    entrypoint: /bin/bash -c "a2enmod ssl && a2ensite default-ssl && apache2ctl -D FOREGROUND"
 
 volumes:
   db_data:

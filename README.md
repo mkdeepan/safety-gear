@@ -27,6 +27,58 @@ docker rmi <image_name>
 # Restart the containers
 docker-compose up -d
 
+# Some useful docker commands
+docker cp ab36dcff17aa:/etc/ssl/certs/greenko_wildcard.crt ./
+docker cp ./default-ssl.conf ed4ab270c8c5:/etc/apache2/sites-available/default-ssl.conf
+docker exec -it
+
+# Moved ssl config within docker, changes required in container config as below
+ports:
+  - "443:443"
+volumes:
+  - ../public_html:/var/www/html
+  - ./certs/greenko_wildcard.crt:/etc/ssl/certs/greenko_wildcard.crt
+  - ./certs/greenko_wildcard.key:/etc/ssl/private/greenko_wildcard.key
+  - ./certs/greenko_wildcard_bundle.crt:/etc/ssl/certs/greenko_wildcard_bundle.crt
+environment:
+  - APACHE_SSL=enabled
+entrypoint: /bin/bash -c "a2enmod ssl && a2ensite default-ssl && apache2ctl -D FOREGROUND"
+
+# Once ssl enabled in docker, it requires following ssl apache2 config as below
+default ssl config:
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+    ServerName prqronline.greenkogroup.com
+    ServerAdmin admin@greenkogroup.com
+    DocumentRoot /var/www/html
+    ErrorLog /var/log/httpd/prqronline.log
+    CustomLog /var/log/httpd/prqronline-cus.log combined
+
+    DirectoryIndex index.php index.html
+
+    <Directory "/var/www/html">
+        Options -Indexes +FollowSymLinks
+        AllowOverride all
+        Require all granted
+    </Directory>
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/greenko_wildcard.crt
+    SSLCertificateKeyFile /etc/ssl/private/greenko_wildcard.key
+    SSLCertificateChainFile /etc/ssl/certs/greenko_wildcard_bundle.crt
+</VirtualHost>
+</IfModule>
+
+
+# If Reverse proxy needed:
+once docker up
+do reverse proxy in default web server (http://127.0.0.1:8081)
+
+# Ensure following tools is enabled: 
+getenforce
+sudo setsebool -P httpd_can_network_connect 1
+
 connect mysql inside docker with below credentials 
 
 `mysql -u user -p`
